@@ -9,7 +9,7 @@ MCServer is a powerful, fully customizable platform that lets you host and manag
   MCServer handles everything—grabs the latest JDK, Vanilla Minecraft, sets up directories, and creates your config file. No complex setup needed!
 
 - **Plug & Play Configs**  
-  Customize your server easily with a simple TOML file, from server type to memory settings to plugins.
+  Customize your server easily with a simple `config.toml` file, from server type to memory settings to plugins.
 
 - **Cloud Power**  
   Optimized for platforms like GCP, MCServer offers high performance and reliable cloud infrastructure.
@@ -25,8 +25,6 @@ MCServer is a powerful, fully customizable platform that lets you host and manag
 
 
 
-
-You can view your exact specs by doing `./specinfo`
 
 ### Service Used:
 - [playit.gg](https://playit.gg)
