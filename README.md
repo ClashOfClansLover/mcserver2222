@@ -27,7 +27,7 @@ MCServer is a powerful, fully customizable platform that lets you host and manag
 
 
 ### Service Used:
-- [playit.gg](https://playit.gg)
+- [Tailscale](https://tailscale.com)
 - [console.cloud.google.com](https://console.cloud.google.com)
 
 ## Installation 
