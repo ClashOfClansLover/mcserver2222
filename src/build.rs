@@ -16,12 +16,16 @@ pub fn build() {
     let config = read_config().unwrap();
     println!("config: {:?}", config);
     let version = config.mcserver.unwrap().java.unwrap();
+    let version_u8 = version.parse::<u8>().unwrap();
     println!("version: {version}");
     let cache = check_jdk_in_cache(version);
     println!("in 23 cache:{}", cache.unwrap());
 
     let cache = check_jdk_in_cache("22".to_string());
-    println!("in 22 cache:{}", cache.unwrap());
+    //println!("in 22 cache:{}", cache.unwrap());
+    if cache.unwrap() == false {
+        download_jdk(version_u8).unwrap();
+    }
 }
 
 pub fn check_project_structure() -> bool {
