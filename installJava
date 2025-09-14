@@ -80,6 +80,13 @@ install_server () {
     chmod +x *
     ./BungeecordInstall
 
+
+  elif [[ $choice == 8 ]];then
+    echo "> Installing Arclight..."
+    cd JavaInstallScripts
+    chmod +x *
+    ./ArclightInstall
+
   
  # Invaild Input
   else
@@ -106,6 +113,7 @@ echo "Type [4] Create Sponge Server"
 echo "Type [5] Create Fabric Server"
 echo "Type [6] Create Spigot Server(COMPILE)"
 echo "Type [7] Create Bungeecord Server(latest)"
+echo "Type [8] Create Arclight 1.20.1 Server"
 choiceForServer=1
 read choiceForServer
 
