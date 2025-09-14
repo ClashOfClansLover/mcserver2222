@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt update -qq
+sudo apt install -y -qq wget
+
+cd ..
+mkdir -p server
+cd server
+
+sudo wget "https://s3.mcjars.app/arclight/1.20.1/1.0.6-SNAPSHOT-6859fcb-forge/server.jar" -o server.jar
+
